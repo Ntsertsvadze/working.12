@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body,
+html {
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(148,187,233,0.46262254901960786) 21%,
+  rgba(238,174,202,1) 40%, rgba(148,187,233,0.24413515406162467) 52%,
+  rgba(148,187,233,1) 67%, rgba(238,174,202,0.3393732492997199) 81%);
+}
+/* Title */
+.Title {
+  text-align: center;
+}
+/* Main List Box */
+.List {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 10px 80px 0;
+  gap: 40px;
+}
+/* Lists Box for Todo and Done */
+.ToDoList,
+.DoneList {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.ToDoList button,
+.DoneList button {
+  padding: 10px 15px;
+}
+.Create-task {
+  width: 100%;
+  height: 45px;
+  font-size: 22px;
+  cursor: pointer;
+  color: rgb(30, 76, 161);
+  background-color: gold;
+  border: none;
+}
+/* ToDo List Content */
+.List-content {
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+.Content {
+  display: flex;
+  align-items: center;
+  color: rgb(44, 42, 42);
+  gap: 40px;
+}
+.Buttons {
+  display: flex;
+  gap: 10px;
+}
+.Empty-Card {
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 20px;
+  font-size: 18px;
+  color: rgba(125, 15, 15, 0.801);
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Modal */
+.Form-modal {
+  width: 400px;
+  height: 200px;
+  border: 1px solid black;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  background-color: green;
+  z-index: 99;
+}
+.Close-btn {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  cursor: pointer;
+}
+.Form-modal input {
+  width: 100%;
+  height: 45px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid black;
+  margin-bottom: 10px;
+}
+.Form-modal button {
+  width: 100%;
+  height: 35px;
+  border-radius: 5px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+.Form-modal button:hover {
+  opacity: 0.8;
+}
+.Overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.384);
+}
