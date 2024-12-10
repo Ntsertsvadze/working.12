@@ -1,13 +1,13 @@
-// დაწერე To do List აპლიკაცია, სადაც გექნება ორი სვეტი, რომელშიც მოთავსებული იქნება შესასრულებელი და შესრულებული სამუშაოები
-// ● მომხმარებელს ექნება შესაძლებლობა შეიყვანოს ახალი დავალებები, რომლებიც ავტომატურად ჩავარდება შესასრულებელ სამუშაოებში
-// ● შესასრულებელ სამუშაოებში ყოველ დავალებას ექნება „დასრულება“ ღილაკი, რომელზე დაჭერისას აღნიშნული
-// დავალება გადაინაცვლებს შესრულებული დავალებების სიაში, ხოლო შესრულებული დავალებების სიაში ყოველ დავალებას
-// ექნება წაშლის და შესასრულებელ დავალებებში გადატანის ღილაკები.
+import React, { Component } from "react"
+import './App.css'
+import UsersList from "./components/UsersList"
 
-import { Component } from "react";
-import TodoContent from "./components/TodoContent";
-export default class App extends Component {
-  render() {
-    return <TodoContent />;
+class App extends Component {
+  render(){
+    return (
+      <UsersList />
+    )
   }
 }
+
+export default App
